@@ -1,19 +1,97 @@
+@import "hamburgers/dist/hamburgers.css";
+
+.navbar-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  z-index: 200;
+  margin-top: 20px;
+}
+
 .navbar-menu {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 100px;
   padding: 0;
-  font-size: 18px;
 }
 
 .navbar-menu li a {
   text-decoration: none;
+  font-size: 18px;
   color: var(--color-white);
-  font-weight: 500;
-  transition: color 0.2s ease;
+  transition: color 0.3s;
 }
 
 .navbar-menu li a:hover {
   color: var(--color-red);
+}
+
+.hamburger--spin .hamburger-inner,
+.hamburger--spin .hamburger-inner::before,
+.hamburger--spin .hamburger-inner::after {
+  background-color: var(--color-white) !important;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-dark);
+  transform: translateY(-100%);
+  transition: transform 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 150;
+}
+
+.overlay.open {
+  transform: translateY(0);
+}
+
+.overlay-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.overlay-menu li a {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.overlay-menu li a:hover {
+  color: var(--color-red);
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: relative;
+    z-index: 200;
+  }
+}
+
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
 }

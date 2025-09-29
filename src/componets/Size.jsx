@@ -1,5 +1,5 @@
 import "../styles/size.css";
-import barcode from "../assets/img/barcode.png";
+import barcode from "../assets/img/barcode.webp";
 export default function Size() {
   return (
     <>

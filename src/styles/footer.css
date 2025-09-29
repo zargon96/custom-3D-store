@@ -25,7 +25,12 @@
 }
 
 .footer-link {
-  color: var(--color-red);
+  color: var(--color-white);
   font-weight: bold;
-  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .footer-subtitle {
+    margin-bottom: 1rem;
+  }
 }
