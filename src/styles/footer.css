@@ -1,0 +1,31 @@
+.box-footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.box-footer-content {
+  max-width: 500px;
+  text-align: right;
+}
+
+.footer-title {
+  font-size: 35px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+.footer-subtitle {
+  text-align: left;
+}
+
+.footer {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.footer-link {
+  color: var(--color-red);
+  font-weight: bold;
+  text-decoration: none;
+}

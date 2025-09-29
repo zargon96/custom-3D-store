@@ -1,0 +1,28 @@
+.credits {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.credits h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-red);
+}
+
+.credits p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.credits a {
+  color: var(--color-red);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.credits a:hover {
+  text-decoration: underline;
+}

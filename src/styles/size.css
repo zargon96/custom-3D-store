@@ -1,0 +1,135 @@
+.size-title {
+  color: var(--color-dark);
+  width: 100%;
+  text-align: center;
+  font-size: 38px;
+}
+
+.size-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.size-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.size-subtitle {
+  color: var(--color-dark);
+  margin: 0;
+  font-size: 32px;
+}
+
+.size-middle {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.size-brand {
+  transform: rotate(-90deg) scaleY(1.6);
+  transform-origin: center;
+  font-size: 250px;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 0px;
+  color: var(--color-dark);
+  opacity: 0.2;
+  margin: 0;
+  white-space: nowrap;
+  padding-top: 6px;
+}
+
+.size-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.box-size {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.btn-order {
+  background-color: var(--color-dark);
+  border: none;
+  padding: 0.7rem 1.2rem;
+  color: var(--color-white);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.size-barcode-top {
+  width: 220px;
+  opacity: 0.8;
+  margin-top: -72px;
+}
+
+.size-barcode-bottom {
+  width: 220px;
+  opacity: 0.8;
+  margin-bottom: -72px;
+}
+
+.size-range {
+  font-size: 62px;
+  color: var(--color-dark);
+}
+
+.size-info {
+  font-size: 24px;
+  color: var(--color-dark);
+}
+
+.ticket {
+  background: transparent;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.ticket::before,
+.ticket::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background: var(--color-dark);
+  border-radius: 50%;
+}
+
+.ticket::before {
+  left: -15px;
+}
+
+.ticket::after {
+  right: -15px;
+}
+
+.ticket-content {
+  border-top: 2px dashed var(--color-dark);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
